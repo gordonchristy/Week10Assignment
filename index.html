@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<!--I'm making a container with divs to create the row and columns. It also contains a submit button to add a recruiting event to the table.-->
+<body class="container">
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-event">Event</label>
+                        <input type="text" class="form-control" id="new-event">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-date">Date</label>
+                        <input type="date" class="form-control" id="new-date">
+                </div>
+            </div>    
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-time">Time</label>
+                    <input type="time" class="form-control" id="new-time">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-location">Location</label>
+                    <input type="text" class="form-control" id="new-location" placeholder="Location">
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary form-control">Submit</button>
+            </div>
+        </div>
+    </div>
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Event</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Location</th>
+        </tr>
+    </table>
+ <script src="index.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>  
+ <script src="node_modules/jquery/dist/jquery.js"></script> 
+</body>
+</html>
